@@ -10,6 +10,12 @@ app.listen(3000);
 app.set('view engine', 'ejs');
 
 
+app.use(express.static('public'));
+
+app.use((req, res, next) => {
+    res.locals.path = req.path;
+    next();
+});
 
 app.get('/', (req, res) => {
     const blogs = [
