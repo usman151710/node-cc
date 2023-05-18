@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/usman151710/node-cc#readme",
   "dependencies": {
-    "express": "^4.18.2",
-    "lodash": "^4.17.21"
+    "express": "^4.18.2"
   }
 }
